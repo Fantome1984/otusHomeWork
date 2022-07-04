@@ -35,5 +35,7 @@ public class Assistant {
         System.out.println("Введи Цвет животного");
         animal.setColor(scanner.next());
     }
+
+
 }
 

@@ -1,4 +1,4 @@
-package Animals;
+package animals;
 
 public abstract class Animal {
     private String name;
@@ -17,11 +17,7 @@ public abstract class Animal {
         } else {
             return " лет"; // для остальных случаев
         }
-        }
-
-
-
-
+           }
 
 
     public String toString() {

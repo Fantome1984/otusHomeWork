@@ -5,6 +5,4 @@ public enum Commands {
     LIST,
     EXIT,
     OTHER
-
-
 }

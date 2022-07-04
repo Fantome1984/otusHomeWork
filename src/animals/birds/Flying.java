@@ -1,7 +1,5 @@
-package Animals.birds;
+package animals.birds;
 
 public interface Flying {
     void fly();
-
-
 }

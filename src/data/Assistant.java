@@ -1,7 +1,6 @@
 package data;
 
-import Animals.Animal;
-import com.sun.tools.javac.Main;
+import animals.Animal;
 
 import java.util.Scanner;
 
@@ -23,7 +22,6 @@ public class Assistant {
         animal.setAge(number);
         return number;
     }
-
 
     public static void createAnimal(Animal animal, Scanner scanner){
         System.out.println("Введи название животного");

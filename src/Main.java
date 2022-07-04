@@ -1,7 +1,7 @@
-import Animals.Animal;
-import Animals.birds.Duck;
-import Animals.pets.Cat;
-import Animals.pets.Dog;
+import animals.Animal;
+import animals.birds.Duck;
+import animals.pets.Cat;
+import animals.pets.Dog;
 import data.Assistant;
 import data.Commands;
 
@@ -14,7 +14,6 @@ public class Main extends Assistant {
         List<Animal> animal = new ArrayList<>();
 
         Scanner scan = new Scanner(System.in);
-
 
         while (true) {
 
@@ -33,12 +32,7 @@ public class Main extends Assistant {
 
                 }
 
-
-
-
-
             }
-
 
             switch (command) {
                 case ADD:
@@ -72,7 +66,6 @@ public class Main extends Assistant {
                     break;
                 case OTHER:
                     System.out.println("Команда неизвестна");
-
 
 
             }

@@ -1,8 +1,12 @@
+package Animals.pets;
+
+import Animals.Animal;
+
 public class Cat extends Animal {
 
 
         @Override
-    public void Say(){
+    public void say(){
         System.out.println("Мяу");
     }
         }

@@ -1,16 +1,22 @@
+import Animals.Animal;
+import Animals.birds.Duck;
+import Animals.pets.Cat;
+import Animals.pets.Dog;
+import data.Assistant;
+import data.Commands;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+public class Main extends Assistant {
+    public static void main (String[] args) {
         List<Animal> animal = new ArrayList<>();
 
         Scanner scan = new Scanner(System.in);
 
-        boolean isExit = true;
-        while (isExit) {
+
+        while (true) {
 
             System.out.println("Выберете одну из команд:" + Commands.ADD + "," + Commands.LIST + "," + Commands.EXIT);
 
@@ -42,26 +48,27 @@ public class Main {
                         Animal catOne = new Cat();
                         createAnimal(catOne,scan);
                         animal.add(catOne);
-                        catOne.Say();
+                        catOne.say();
                     }
                     else if (choice.equals("Собаку")){
                         Animal dogOne = new Dog();
                         createAnimal(dogOne,scan);
                         animal.add(dogOne);
-                        dogOne.Say();
+                        dogOne.say();
                     }
                     else if (choice.equals("Утку")){
                         Animal duckOne = new Duck();
                         createAnimal(duckOne,scan);
                         animal.add(duckOne);
-                        duckOne.Say();
+                        duckOne.say();
                     }
                     break;
                 case LIST:
                    animal.forEach(animal1 ->  System.out.println(animal1.toString()));
                     break;
                 case EXIT:
-                    isExit = false;
+                    System.out.println("Выход из программы");
+                    System.exit(1);
                     break;
                 case OTHER:
                     System.out.println("Команда неизвестна");
@@ -72,16 +79,8 @@ public class Main {
         }
     }
 
-    public static void createAnimal(Animal animal, Scanner scanner){
-        System.out.println("Введи название животного");
-        animal.setName(scanner.next());
-        System.out.println("Введи возраст животного");
-        animal.setAge(scanner.nextInt());
-        System.out.println("Введи вес животного");
-        animal.setWeight(scanner.nextInt());
-        System.out.println("Введи Цвет животного");
-        animal.setColor(scanner.next());
-    }
+
+
 }
 
 

@@ -1,3 +1,5 @@
+package Animals;
+
 public abstract class Animal {
     private String name;
     private int age;
@@ -10,7 +12,7 @@ public abstract class Animal {
             return " год";
         } else if (a == 0 || a >= 5) {
             return " лет";
-        } else if (a > 4) {
+        } else if (a >= 2) {
             return " года";
         } else {
             return " лет"; // для остальных случаев
@@ -27,16 +29,16 @@ public abstract class Animal {
               ","  + "мой цвет - " + color;
     }
 
-    public void Say(){
+    public void say(){
         System.out.println("Я говорю");
     }
-    public void Go(){
+    public void go(){
         System.out.println("Я Иду");
     }
-    public void Drink(){
+    public void drink(){
         System.out.println("Я пью");
     }
-    public void Eat(){
+    public void eat(){
         System.out.println("Я ем");
     }
 

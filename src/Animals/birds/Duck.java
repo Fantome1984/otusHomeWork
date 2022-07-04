@@ -1,3 +1,7 @@
+package Animals.birds;
+
+import Animals.Animal;
+
 public class Duck extends Animal implements Flying {
 
 
@@ -7,7 +11,7 @@ public class Duck extends Animal implements Flying {
     }
 
     @Override
-    public void Say() {
+    public void say() {
         System.out.println("Кря");
     }
 }

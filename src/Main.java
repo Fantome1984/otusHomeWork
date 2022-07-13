@@ -62,7 +62,7 @@ public class Main extends Assistant {
                     break;
                 case EXIT:
                     System.out.println("Выход из программы");
-                    System.exit(1);
+                    System.exit(0);
                     break;
                 case OTHER:
                     System.out.println("Команда неизвестна");
